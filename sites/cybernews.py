@@ -5,7 +5,7 @@ def xnews():
 	url = "https://cyware.com/hacker-news"
 	page = requests.get(url)
 	soup = BeautifulSoup(page.content, 'html.parser')
-	cl = soup.findAll(class_='cy-card__meta')
+	cl = soup.findAll(class_='cy-page-title m-0 py-1')
 	
 	txt=cl[0].text
 	#print(txt)
