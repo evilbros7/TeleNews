@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews,cybernews)
+from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews)
 import telebot # pyTelegramBotAPI library
 import pyfiglet
 
@@ -19,7 +19,7 @@ f.close()
 
 bot = telebot.TeleBot(token=bot_token)
 
-site=input("[Note: GadgetsNdtv is best]\nEnter 1 to get Technews from GadgetsNdtv\nEnter 2 to get TechNews from LiveMint\nEnter 3 to get Technews from IndiaToday\nEnter 4 to get Technews from IndianExpress\nEnter 5 to get Technews from zeenews\nEnter 6 to get Technews from cybernews\nEnter Choice:-")
+site=input("[Note: GadgetsNdtv is best]\nEnter 1 to get Technews from GadgetsNdtv\nEnter 2 to get TechNews from LiveMint\nEnter 3 to get Technews from IndiaToday\nEnter 4 to get Technews from IndianExpress\nEnter 5 to get Technews from zeenews\nEnter Choice:-")
 
 if(site=='1'):
 	print("\nCREATING TECH NEWS FROM GADGETSNDTV !\n")
@@ -40,10 +40,6 @@ elif(site=='4'):
 elif(site=='5'):
 	print("\nCREATING TECH NEWS FROM ZEENEWS !\n")
 	List=zeenews.zee()
-
-elif(site=='6'):
-	print("\nCREATING TECH NEWS FROM CYBERNEWS !\n")
-	List=cybernews.xnews()
 	
 else:
 	print("\nWrong Choice! Exit")
