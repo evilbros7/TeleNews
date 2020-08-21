@@ -43,7 +43,7 @@ elif(site=='5'):
 
 elif(site=='6'):
 	print("\nCREATING TECH NEWS FROM CYBERNEWS !\n")
-	List=cyber.xnews()
+	List=cybernews.xnews()
 	
 else:
 	print("\nWrong Choice! Exit")
