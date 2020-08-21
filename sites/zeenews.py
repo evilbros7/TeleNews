@@ -18,7 +18,7 @@ def zee():
 	List = []
 	for i in cl:
 		count=count+1
-		if count==15:
+		if count==20:
 			break
 		#print(i.text)
 		x=i.text.find("\n\n\n")
