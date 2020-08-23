@@ -45,7 +45,7 @@ else:
 	print("\nWrong Choice! Exit")
 	exit()
 
-List.insert(0,'࿇══━━━━🚦Tech By ΞVIL(◣_◢)ZФИΞ🚦━━━━══࿇')
+List.insert(0,'☆☆☆☆☆🚦 Tech News by ΞVIL(◣_◢)ZФИΞ 🚦☆☆☆☆☆')
 List.append("\n\n"+msg)
 #print(List)
 text = " ".join(List)
