@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews,beebom)
+from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews,beebom,arena)
 import telebot # pyTelegramBotAPI library
 import pyfiglet
 
@@ -47,7 +47,7 @@ elif(site=='6'):
 	
 elif(site=='7'):
 	print("\nCREATING TECH NEWS FROM ZEENEWS !\n")
-	List=gsm.gsm()
+	List=gsm.arena()
 	
 else:
 	print("\nWrong Choice! Exit")
