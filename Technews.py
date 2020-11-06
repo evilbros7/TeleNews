@@ -45,7 +45,7 @@ elif(site=='6'):
 	print("\nCREATING TECH NEWS FROM ZEENEWS !\n")
 	List=beebom.bom()
 	
-elif(site=='6'):
+elif(site=='7'):
 	print("\nCREATING TECH NEWS FROM ZEENEWS !\n")
 	List=gsm.arena()
 	
