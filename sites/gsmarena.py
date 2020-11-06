@@ -24,11 +24,3 @@ def arena():
 		List.append(i.a.get('title'))
 	return List
 
-List=arena()
-#print(l)
-
-#print(List)
-List.insert(0,'☆☆☆☆☆💥 Tech News 💥☆☆☆☆☆')
-#print(List)
-text = " ".join(List)
-print(text)
