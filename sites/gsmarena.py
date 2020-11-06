@@ -24,7 +24,7 @@ def arena():
 		List.append(i.a.get('title'))
 	return List
 
-List=bom()
+List=arena()
 #print(l)
 
 #print(List)
