@@ -47,7 +47,7 @@ elif(site=='6'):
 	
 elif(site=='7'):
 	print("\nCREATING TECH NEWS FROM ZEENEWS !\n")
-	List=gsmarena.arena()
+	List=gsm.arena()
 	
 else:
 	print("\nWrong Choice! Exit")
