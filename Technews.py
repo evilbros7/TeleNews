@@ -42,7 +42,7 @@ elif(site=='5'):
 	List=zeenews.zee()
 	
 elif(site=='6'):
-	print("\nCREATING TECH NEWS FROM ZEENEWS !\n")
+	print("\nCREATING TECH NEWS FROM BEEBOM !\n")
 	List=beebom.bom()
 	
 else:
