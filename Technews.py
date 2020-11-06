@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews,beebom,arena)
+from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews,beebom,gsmarena)
 import telebot # pyTelegramBotAPI library
 import pyfiglet
 
@@ -42,11 +42,11 @@ elif(site=='5'):
 	List=zeenews.zee()
 	
 elif(site=='6'):
-	print("\nCREATING TECH NEWS FROM ZEENEWS !\n")
+	print("\nCREATING TECH NEWS FROM BEEBOM!\n")
 	List=beebom.bom()
 	
 elif(site=='7'):
-	print("\nCREATING TECH NEWS FROM ZEENEWS !\n")
+	print("\nCREATING TECH NEWS FROM GSMARENA !\n")
 	List=gsm.arena()
 	
 else:
