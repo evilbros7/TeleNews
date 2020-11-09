@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def express():
+def areana():
 	url = "https://www.gsmarena.com/news.php3"
 	page = requests.get(url)
 	soup = BeautifulSoup(page.content, 'html.parser')
