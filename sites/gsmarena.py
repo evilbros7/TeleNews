@@ -20,7 +20,7 @@ def arena():
 		#if(count==11):
 			#List.append("\n\n🌐 Join @pvxtechnews for daily tech news !")
 
-		headline = cl.h2.a.text
-                print(headline)
+		List.append("\n\n🔅")
+		List.append(i.a.get('h2'))
 	return List
 
