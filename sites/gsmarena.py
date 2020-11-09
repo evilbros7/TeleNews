@@ -7,7 +7,7 @@ def arena():
 	soup = BeautifulSoup(page.content, 'html.parser')
 	cl = soup.findAll(class_='news-item')
 	
-	txt=cl[0].text
+	txt=cl.text
 	#print(txt)
 	cl=txt.split("\n\n\n\n\n\n\n\n")
 	
@@ -17,5 +17,5 @@ def arena():
 		List.append("\n\n🌐")
 		List.append(i)
 
-	List[1]=List[1].replace("\n\n\n\n\n\n\n","")
+
 	return List
