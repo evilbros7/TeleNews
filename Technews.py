@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews,beebom,gsmarena)
+from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews,beebom,gsmarena,xda)
 import telebot # pyTelegramBotAPI library
 import pyfiglet
 
