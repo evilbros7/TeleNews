@@ -1,21 +1,21 @@
 import requests
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup as bs
 
 def arena():
-	url = "https://www.gsmarena.com/news.php3"
-	page = requests.get(url)
-	soup = BeautifulSoup(page.content, 'html.parser')
-	cl = soup.findAll(class_='news-item')
-	
-	txt=cl.text
-	#print(txt)
-	cl=txt.split("\n\n\n\n\n\n\n\n")
-	
-	List = []
-	for i in cl:
-		#print(i.text)
-		List.append("\n\n🌐")
-		List.append(i)
+	url="https://www.gsmarena.com/news.php3"
+	response=requests.get(url)
+		
 
+	soup=bs(response.content,"html.parser")
+	headings=soup.findAll("h3")
 
-	return List
+	count=0
+	newsList=[]
+	for heading in headings:
+		count+=1
+		newsList.append("\n\n🌐")
+		newsList.append(heading.text)
+		if count==15:
+			break
+
+	return newsList
