@@ -15,7 +15,7 @@ def xdaa():
   count+=1
   newsList.append("\n\n🌐")
   newsList.append(heading.a.text)
-  if count==25:
+  if count==30:
    break
    
  return newsList
