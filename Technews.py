@@ -5,9 +5,9 @@ import telebot # pyTelegramBotAPI library
 import pyfiglet
 
 print("\n")
-banner = pyfiglet.figlet_format('TECH-NEWS')
+banner = pyfiglet.figlet_format('TELE-NEWS')
 print(banner)
-print("Welcome to TechNews posting bot for telegram! by @premiumcoursesdrive <3 \n")
+print("Welcome to TechNews posting bot for telegram! by t.me/pvxtechnews <3 \n")
 
 f=open("data.txt",'r')
 data=f.readline()
@@ -30,28 +30,28 @@ elif(site=='2'):
 	List=xda.xda()
 	
 elif(site=='3'):
-	print("\nCREATING TECH NEWS FROM BEEBOM !\n")
-	List=beebom.bom()
+	print("\nCREATING TECH NEWS FROM INDIATODAY !\n")
+	List=indiatoday.today()
 	
 elif(site=='4'):
-	print("\nCREATING TECH NEWS FROM GSMARENA !\n")
-	List=gsmarena.gsm()
+	print("\nCREATING TECH NEWS FROM INDIANEXPRESS !\n")
+	List=indianexpress.express()
 
 elif(site=='5'):
 	print("\nCREATING TECH NEWS FROM ZEENEWS !\n")
 	List=zeenews.zee()
 
 elif(site=='6'):
-	print("\nCREATING TECH NEWS FROM INDIATODAY !\n")
-	List=indiatoday.today()
+	print("\nCREATING TECH NEWS FROM BEEBOM !\n")
+	List=beebom.bom()
 
 elif(site=='7'):
 	print("\nCREATING TECH NEWS FROM LIVEMINT !\n")
 	List=livemint.mint()
 
 elif(site=='8'):
-	print("\nCREATING TECH NEWS FROM INDIANEXPRESS !\n")
-	List=indianexpress.express()
+	print("\nCREATING TECH NEWS FROM GSMARENA !\n")
+	List=gsmarena.gsm()
 	
 else:
 	print("\nWrong Choice! Exit")
