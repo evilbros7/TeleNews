@@ -13,7 +13,7 @@ def xda():
     newsList=[]
     for heading in headings:
         count+=1
-        if count==15:
+        if count==14:
             break
 		#if count==11:
 			#List.append("\n\n🌐 Join @premiumcoursesdrive for daily tech news !")
