@@ -2,24 +2,23 @@ import requests
 from bs4 import BeautifulSoup
 
 def bom():
-	url = 'https://beebom.com/category/news/'
-	page = requests.get(url)
-	soup = BeautifulSoup(page.content, 'html.parser')
-	cl = soup.findAll(class_='bee-list')
+    url = 'https://beebom.com/category/news/'
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, 'html.parser')
+    headings = soup.findAll("div",class_='item-details')
 
-	#print(cl[1])
-	#print(cl[1].a.get('title'))
-	List = []
+    count=0
+    List = []
 	
-	count=0 #to get only top 15 news
-	for i in cl:
-		#print(i.a.get('title'))
-		count=count+1
-		if(count==15):
-			break
-		#if(count==11):
+    count=0 #to get only top 14 news
+    for heading in headings:
+        count+=1
 
-		List.append("\n\n🔅")
-		List.append(i.a.get('title'))
-	return List
+        if count==15:
+            break
 
+        
+        List.append("\n\n💠")
+        List.append(heading.a.text)
+	
+    return List
