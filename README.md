@@ -29,7 +29,7 @@ $ termux-setup-storage
 
 5) Copy the github repository
 ```
-$ git clone https://github.com/Shubhamrawat5/TeleNews.git
+$ git clone https://github.com/evilbros7/TeleNews.git
 ```
 
 6) Open the TeleNews folder created on your phone
