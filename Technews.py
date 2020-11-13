@@ -1,13 +1,13 @@
 import requests
 from bs4 import BeautifulSoup
-from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews,beebom,gsmarena,xda)
+from sites import (gadgetsndtv,livemint,indiatoday,indianexpress,zeenews,gsmarena,xda,beebom)
 import telebot # pyTelegramBotAPI library
 import pyfiglet
 
 print("\n")
-banner = pyfiglet.figlet_format('TELE-NEWS')
+banner = pyfiglet.figlet_format('TECH-NEWS')
 print(banner)
-print("Welcome to TechNews posting bot for telegram! by t.me/pvxtechnews <3 \n")
+print("Welcome to TechNews posting bot for telegram! by @premiumcoursesdrive <3 \n")
 
 f=open("data.txt",'r')
 data=f.readline()
@@ -19,39 +19,39 @@ f.close()
 
 bot = telebot.TeleBot(token=bot_token)
 
-site=input("[Note: GadgetsNdtv is best]\nEnter 1 to get Technews from GadgetsNdtv\nEnter 2 to get TechNews from LiveMint\nEnter 3 to get Technews from IndiaToday\nEnter 4 to get Technews from IndianExpress\nEnter 5 to get Technews from zeenews\nEnter 6 to get Technews from beenews\nEnter 7 to get Technews from Gsmarena\nEnter 8 to get Technews from\nEnter Choice:-")
+site=input("[Note: GadgetsNdtv is best]\nEnter 1 to get Technews from GadgetsNdtv\nEnter 2 to get TechNews from xda-developers\nEnter 3 to get Technews from IndiaToday\nEnter 4 to get Technews from IndianExpress\nEnter 5 to get Technews from zeenews\nEnter 6 to get Technews from beebom\nEnter 7 to get Technews from livemint\nEnter 8 to get Technews from gsmarena\nEnter Choice:-")
 
 if(site=='1'):
 	print("\nCREATING TECH NEWS FROM GADGETSNDTV !\n")
 	List=gadgetsndtv.ndtv()
 	
 elif(site=='2'):
-	print("\nCREATING TECH NEWS FROM LIVEMINT !\n")
-	List=livemint.mint()
+	print("\nCREATING TECH NEWS FROM XDA-DEVELOPERS !\n")
+	List=xda.xda()
 	
 elif(site=='3'):
-	print("\nCREATING TECH NEWS FROM INDIATODAY !\n")
-	List=indiatoday.today()
+	print("\nCREATING TECH NEWS FROM BEEBOM !\n")
+	List=beebom.bom()
 	
 elif(site=='4'):
-	print("\nCREATING TECH NEWS FROM INDIANEXPRESS !\n")
-	List=indianexpress.express()
+	print("\nCREATING TECH NEWS FROM GSMARENA !\n")
+	List=gsmarena.gsm()
 
 elif(site=='5'):
 	print("\nCREATING TECH NEWS FROM ZEENEWS !\n")
 	List=zeenews.zee()
-	
+
 elif(site=='6'):
-	print("\nCREATING TECH NEWS FROM BEEBOM!\n")
-	List=beebom.bom()
-	
+	print("\nCREATING TECH NEWS FROM INDIATODAY !\n")
+	List=indiatoday.today()
+
 elif(site=='7'):
-	print("\nCREATING TECH NEWS FROM GSMARENA !\n")
-	List=gsmarena.arena()
+	print("\nCREATING TECH NEWS FROM LIVEMINT !\n")
+	List=livemint.mint()
 
 elif(site=='8'):
-	print("\nCREATING TECH NEWS FROM XDA !\n")
-	List=xda.xdaa()
+	print("\nCREATING TECH NEWS FROM INDIANEXPRESS !\n")
+	List=indianexpress.express()
 	
 else:
 	print("\nWrong Choice! Exit")
@@ -74,4 +74,3 @@ if(ch=='1'):
 
 else:
 		print("\nNot Posted :( !!")
-		
