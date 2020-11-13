@@ -17,7 +17,7 @@ def ndtv():
 		#if count==11:
 			#List.append("\n\n🌐 Join [Telegram:@premiumcoursesdrive] for daily tech news !")
 
-		List.append("\n\n🌐")
+		List.append("\n\n💠")
 		headline=heading.text
 
 		if headline[-23:]==": Price, Specifications": #cropping headlings having this text in the end
